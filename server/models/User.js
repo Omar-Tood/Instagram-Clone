@@ -35,10 +35,10 @@ const userSchema = new Schema(
         validate: [
           {
             validator: function (value) {
-              validator.isStrongPassword(value),
-                (message =
-                  "Password must Contain one or more alphanumeric characters and symbols");
+              validator.isStrongPassword(value)
+               
             },
+            message:"Password must contain one or more alphanumeric characters and symbols"
           },
         ],
       },

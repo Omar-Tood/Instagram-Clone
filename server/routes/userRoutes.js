@@ -1,10 +1,8 @@
 import express from 'express'
+import { registerUser } from '../controllers/usercontroller.js'
 
 const userRoutes = express.Router()
 
- userRoutes.get('/', (req, res) =>{
-    res.send("Welcome Mern Stack Project")
- })
-
+ userRoutes.post('/register-user', registerUser)
 
 export default userRoutes
