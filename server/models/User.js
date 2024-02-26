@@ -35,7 +35,7 @@ const userSchema = new Schema(
         validate: [
           {
             validator: function (value) {
-              validator.isStrongPassword(value)
+               return validator.isStrongPassword(value)
                
             },
             message:"Password must contain one or more alphanumeric characters and symbols"
